@@ -8,10 +8,13 @@ function Register({ setUser }) {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const res = await api.post("http://localhost:3000/api/users/register", {
-        name,
-        phone,
-      });
+      const res = await api.post(
+        "https://scan2enter-backend.onrender.com/api/users/register",
+        {
+          name,
+          phone,
+        }
+      );
       alert(res.data.message);
       setUser(res.data.data); // pass user data up
     } catch (err) {
