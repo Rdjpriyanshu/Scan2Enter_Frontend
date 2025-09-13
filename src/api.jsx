@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://scan2enter-backend.onrender.com/", // your backend
+  baseURL: "http://localhost:3000/api", // your backend
 });
 
 export default api;
