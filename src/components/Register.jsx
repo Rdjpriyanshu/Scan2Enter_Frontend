@@ -9,7 +9,7 @@ function Register({ setUser }) {
     e.preventDefault();
     try {
       const res = await api.post(
-        "https://scan2enter-backend.onrender.com/api/users/register",
+        "/users/register",
         {
           name,
           phone,
